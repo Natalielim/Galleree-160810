@@ -21,7 +21,8 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         super.viewDidLoad()
         
        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 30
+        //tableView.estimatedRowHeight = 30
+        //imageView.contentMode = .ScaleAspectFit
         
         if let post = post {
             
