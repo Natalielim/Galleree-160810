@@ -34,10 +34,7 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
     func updateWithPost(post: Post) {
         
         imageView.image = post.photo
-        
-        PostController.sharedController.checkSubscriptionToPostComments(post) { (subscribed) in
-            
-        }
+    
     }
     
     func setUpFetchedResultsController() {
