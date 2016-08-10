@@ -9,8 +9,8 @@
         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Comment" inverseName="post" inverseEntity="Comment" syncable="YES"/>
     </entity>
     <entity name="Profile" representedClassName="profileprofile" syncable="YES">
-        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="about" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="occupation" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -22,7 +22,7 @@
     <elements>
         <element name="Comment" positionX="-54" positionY="-9" width="128" height="75"/>
         <element name="Post" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="SyncableObject" positionX="-54" positionY="54" width="128" height="90"/>
         <element name="Profile" positionX="-36" positionY="72" width="128" height="105"/>
+        <element name="SyncableObject" positionX="-54" positionY="54" width="128" height="90"/>
     </elements>
 </model>
