@@ -173,6 +173,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="e8t-4a-dJD" id="QhR-X0-fqB"/>
                             <outlet property="delegate" destination="e8t-4a-dJD" id="rSE-yT-Nia"/>
@@ -379,16 +380,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E3-mO-pLB">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <connections>
-                                    <action selector="hideKeyboardButton:" destination="EkN-rp-Svt" eventType="touchUpInside" id="7f6-NF-mUL"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-08-03 at 11.19.50 AM" translatesAutoresizingMaskIntoConstraints="NO" id="H6V-mV-8DN" userLabel="Galleree Color Background">
-                                <rect key="frame" x="0.0" y="40" width="600" height="130"/>
+                                <rect key="frame" x="0.0" y="40" width="600" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="AGb-R5-INJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="AGb-R5-INJ"/>
                                 </constraints>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW3-pA-qQF">
@@ -459,6 +454,12 @@
                                 <rect key="frame" x="213" y="94" width="175" height="175"/>
                                 <connections>
                                     <action selector="butLibraryAction:" destination="EkN-rp-Svt" eventType="touchUpInside" id="pzn-3N-Fpy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E3-mO-pLB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <connections>
+                                    <action selector="hideKeyboardButton:" destination="EkN-rp-Svt" eventType="touchUpInside" id="7f6-NF-mUL"/>
                                 </connections>
                             </button>
                         </subviews>

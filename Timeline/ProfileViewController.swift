@@ -22,7 +22,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         
         imageView.layer.borderWidth = 8
         imageView.layer.masksToBounds = false
-        imageView.layer.borderColor = UIColor.whiteColor().CGColor
+        imageView.layer.borderColor = UIColor.grayColor().CGColor
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
         
