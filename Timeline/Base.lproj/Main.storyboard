@@ -305,7 +305,7 @@
         <scene sceneID="e7m-39-IS3">
             <objects>
                 <tableViewController storyboardIdentifier="SearchResultsTableViewController" id="YP2-6k-kcS" customClass="SearchResultsTableViewController" customModule="Galleree" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jf2-dO-ihd">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jf2-dO-ihd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -314,17 +314,17 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mp2-Zg-AE9" id="aPP-4Z-hw7">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="249.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-ex-oTe">
-                                            <rect key="frame" x="98" y="-34" width="444" height="317.5"/>
+                                            <rect key="frame" x="98" y="-33.5" width="444" height="317"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="UG0-ex-oTe" secondAttribute="height" multiplier="7:5" id="lbo-tN-e17"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-rA-Bcz">
-                                            <rect key="frame" x="58" y="-2" width="5" height="253.5"/>
+                                            <rect key="frame" x="58" y="-2" width="5" height="254"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -342,9 +342,9 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Pdc-rA-Bcz" firstAttribute="top" secondItem="aPP-4Z-hw7" secondAttribute="topMargin" constant="-10" id="10j-O8-dMI"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Pdc-rA-Bcz" secondAttribute="bottom" constant="-10" id="2OG-Eg-YY0"/>
+                                        <constraint firstItem="Pdc-rA-Bcz" firstAttribute="top" secondItem="aPP-4Z-hw7" secondAttribute="topMargin" constant="-10" id="2vS-5r-rIy"/>
                                         <constraint firstItem="bw6-XI-iLX" firstAttribute="centerY" secondItem="aPP-4Z-hw7" secondAttribute="centerY" id="8IM-po-gGM"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Pdc-rA-Bcz" secondAttribute="bottom" constant="-10" id="BqU-2Q-25V"/>
                                         <constraint firstItem="UG0-ex-oTe" firstAttribute="centerY" secondItem="aPP-4Z-hw7" secondAttribute="centerY" id="McZ-Y5-eoT"/>
                                         <constraint firstItem="Pdc-rA-Bcz" firstAttribute="leading" secondItem="aPP-4Z-hw7" secondAttribute="leadingMargin" constant="50" id="dzy-NY-nxs"/>
                                         <constraint firstItem="UG0-ex-oTe" firstAttribute="leading" secondItem="aPP-4Z-hw7" secondAttribute="leadingMargin" constant="90" id="jnL-sP-zYF"/>
@@ -680,7 +680,7 @@
         <scene sceneID="dN6-9y-lfP">
             <objects>
                 <tableViewController title="Search Table View Controller" id="FCa-vi-AuZ" customClass="SearchTableViewController" customModule="Galleree" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" id="gcW-KX-phQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" sectionHeaderHeight="28" sectionFooterHeight="28" id="gcW-KX-phQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
