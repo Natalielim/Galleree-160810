@@ -19,7 +19,6 @@ class SearchTableViewController: UITableViewController, NSFetchedResultsControll
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }*/
 
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
