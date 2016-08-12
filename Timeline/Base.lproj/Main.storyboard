@@ -197,10 +197,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
+                            <tableViewSection id="ObQ-l8-VpJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="Jjh-SA-V4j">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jjh-SA-V4j" id="kJd-Q2-AcA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2P-Et-uQd">
+                                                    <rect key="frame" x="13" y="13" width="584" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G2P-Et-uQd" firstAttribute="trailing" secondItem="kJd-Q2-AcA" secondAttribute="trailingMargin" constant="5" id="5wV-Ib-Sti"/>
+                                                <constraint firstItem="G2P-Et-uQd" firstAttribute="leading" secondItem="kJd-Q2-AcA" secondAttribute="leadingMargin" constant="5" id="Mgu-0U-pkn"/>
+                                                <constraint firstItem="G2P-Et-uQd" firstAttribute="top" secondItem="kJd-Q2-AcA" secondAttribute="topMargin" constant="5" id="Skz-HP-rOB"/>
+                                                <constraint firstItem="G2P-Et-uQd" firstAttribute="bottom" secondItem="kJd-Q2-AcA" secondAttribute="bottomMargin" constant="5" id="xpf-KF-WlQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection id="oaa-PB-DBQ">
                                 <cells>
                                     <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="264" id="Hj7-A5-Lag">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="264"/>
+                                        <rect key="frame" x="0.0" y="178" width="600" height="264"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hj7-A5-Lag" id="6M8-og-G19">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
@@ -227,7 +252,7 @@
                             <tableViewSection id="Xej-OB-bjF">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="W7T-LC-ZdQ">
-                                        <rect key="frame" x="0.0" y="399" width="600" height="43"/>
+                                        <rect key="frame" x="0.0" y="478" width="600" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W7T-LC-ZdQ" id="dwX-ti-XWp">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -252,7 +277,7 @@
                             <tableViewSection id="tPd-Yz-2Hp">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="42" id="c0b-Iw-jwv">
-                                        <rect key="frame" x="0.0" y="478" width="600" height="42"/>
+                                        <rect key="frame" x="0.0" y="557" width="600" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0b-Iw-jwv" id="suD-Dd-T69">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
@@ -296,6 +321,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="captionTextField" destination="9QE-it-MFS" id="cdt-hU-55t"/>
+                        <outlet property="titleTextField" destination="G2P-Et-uQd" id="1uX-TA-ywy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFv-bJ-EKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
