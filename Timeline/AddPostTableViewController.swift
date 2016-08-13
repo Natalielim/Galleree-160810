@@ -11,7 +11,8 @@ import UIKit
 class AddPostTableViewController: UITableViewController {
 
     var image: UIImage?
-        
+    @IBOutlet weak var titleTextField: UITextField!
+
     @IBOutlet weak var captionTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class AddPostTableViewController: UITableViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Missing Post Information", message: "Check your image and caption and try again.", preferredStyle: .Alert)
+            let alertController = UIAlertController(title: "Missing Post Information", message: "Check your title, image, and caption and try again.", preferredStyle: .Alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
             
             presentViewController(alertController, animated: true, completion: nil)
